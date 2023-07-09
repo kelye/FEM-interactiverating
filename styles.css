@@ -80,14 +80,14 @@ p {
   cursor: pointer;
 }
 
-.rating-container .circle:focus {
+/* .rating-container .circle:focus {
   border-style: none;
   text-align: center;
   font-weight: 700;
   color: hsl(0, 0%, 100%);
   background-color: hsl(217, 12%, 63%);
   cursor: pointer;
-}
+} */
 
 .submit-container .submit-button {
   border-style: none;
@@ -107,6 +107,15 @@ p {
   width: 100%;
   border-radius: 25px;
   letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.rating-clicked {
+  border-style: none;
+  text-align: center;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(217, 12%, 63%);
   cursor: pointer;
 }
 
