@@ -1,6 +1,6 @@
 function recordRating(element){
     // console.log( value.value);
-    localStorage.setItem('rating', element.value);
+    sessionStorage.setItem('rating', element.value);
     return element.value;
 }
 
@@ -23,7 +23,7 @@ function ifClicked(){
 window.onload = function(){
     const selectedRating = document.querySelector('#final-rating');
     if(selectedRating){
-    var passedRating = localStorage.getItem('rating');
+    var passedRating = sessionStorage.getItem('rating');
     var selected = "You selected "+ passedRating +" out of 5"
     document.getElementById('final-rating').innerHTML= selected;
     }
