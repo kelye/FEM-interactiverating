@@ -5,21 +5,6 @@ function recordRating(element){
 }
 
 
-
-function ifClicked(){
-    const ratingElement =  document.getElementsByName('rating');
-    console.log(ratingElement)
-    document.addEventListener('click', function classClicked(event){
-        console.log(event.target.name);
-  
-        ratingElement.classList.toggle('rating-clicked');
-
-    
-        
-    });
-    
-}
-
 window.onload = function(){
     const selectedRating = document.querySelector('#final-rating');
     if(selectedRating){
